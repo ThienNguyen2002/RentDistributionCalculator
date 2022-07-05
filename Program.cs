@@ -32,10 +32,10 @@
             double rentPercentage = (double)rent / combinedSalary;
             Console.WriteLine("The rent percentage is: " + rentPercentage * 100 + "%");
             //Calculate the rent for each person.
-            int[] rentForEachPerson = new int[numberOfPeople];
+            double[] rentForEachPerson = new double[numberOfPeople];
             for (int i = 0; i < numberOfPeople; i++)
             {
-                rentForEachPerson[i] = (int)(monthlySalary[i] * rentPercentage);
+                rentForEachPerson[i] = (double)(monthlySalary[i] * rentPercentage);
             }
             //Print the rent for each person.
             for (int i = 0; i < numberOfPeople; i++)
